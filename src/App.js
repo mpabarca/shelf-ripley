@@ -24,12 +24,12 @@ class App extends Component{
         
     }
     render(){
-        console.log('desde App');
-        console.log(this.state.products);
         return(
             <div>
                 <h1>Mi Vitrina de Productos</h1>
-                <Product/>
+                <Shelf
+                    products = {this.state.products}
+                />
             </div>
             
         )
