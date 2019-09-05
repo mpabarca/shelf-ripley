@@ -17,7 +17,7 @@
 }
 .product-images{
     display: flex;
-    width: 65%;
+    width: 60%;
     margin-right: 2vw;
 }
 .side-images{
@@ -31,7 +31,7 @@
     width: 100%;
 }
 .product-description{
-    width: 35%;
+    width: 40%;
 }
 .product-brand{
     font-size: .8rem;
@@ -111,4 +111,31 @@ ul.list-sizes .size{
     display: flex;
     margin: .3rem;
     font-size: .8rem;
+}
+
+@media only screen and (max-width:40em){
+    .back{
+        margin-bottom: 10vw;
+        font-size: .9rem;
+        width: 60px;
+    }
+    .product-container{
+        flex-direction: column;
+    }
+    .product-images{
+        width: 100%;
+    }
+    .product-description{
+        width: 85%;
+    }
+    ul.side-images{
+        padding:0;
+    }
+    .fullImage {
+        width: 70%;
+    }
+    .card-price{
+        font-size: 5vw;
+    }
+
 }
